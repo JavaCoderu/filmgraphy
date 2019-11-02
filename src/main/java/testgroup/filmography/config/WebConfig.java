@@ -14,10 +14,10 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 @ComponentScan(basePackages = "testgroup.filmography")
 public class WebConfig implements WebMvcConfigurer {
 
-   // @Override
-    //public void addResourceHandlers(ResourceHandlerRegistry registry) {
-      //  registry.addResourceHandler("/webjars/**").addResourceLocations("/webjars/");
-    //}
+    @Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        registry.addResourceHandler("/webjars/**").addResourceLocations("/webjars/");
+    }
 
 
 
